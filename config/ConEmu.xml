@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<key name="Software">
+	<key name="ConEmu">
+		<key name=".Vanilla">
+			<value name="CursorTypeActive" type="dword" data="000232c1"/>
+			<value name="Multi.NewConfirm" type="hex" data="00"/>
+			<value name="StartTasksName" type="string" data="{bash::bash}"/>
+			<value name="Update.CheckOnStartup" type="hex" data="00"/>
+			<value name="EnvironmentSet" type="multi">
+				<line data="set LANG=en_US.UTF-8"/>
+				<line data="set LC_ALL=en_US.UTF-8"/>
+			</value>
+		</key>
+	</key>
+</key>
