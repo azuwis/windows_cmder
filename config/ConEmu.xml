@@ -10,6 +10,12 @@
                 <line data="set LANG=en_US.UTF-8"/>
                 <line data="set LC_ALL=en_US.UTF-8"/>
             </value>
+            <key name="HotKeys">
+                <value name="MinimizeRestore" type="dword" data="00000000"/>
+                <value name="Multi.Close" type="dword" data="00000000"/>
+                <value name="CTS.VkCopyFmt0" type="dword" data="00000000"/>
+                <value name="ClipboardVkFirstLine" type="dword" data="00000000"/>
+            </key>
         </key>
     </key>
 </key>
