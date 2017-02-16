@@ -44,7 +44,7 @@
 			<value name="ExtendFontNormalIdx" type="hex" data="01"/>
 			<value name="ExtendFontBoldIdx" type="hex" data="0c"/>
 			<value name="ExtendFontItalicIdx" type="hex" data="0d"/>
-			<value name="CursorTypeActive" type="dword" data="000232c1"/>
+			<value name="CursorTypeActive" type="dword" data="000232c2"/>
 			<value name="CursorTypeInactive" type="dword" data="00823282"/>
 			<value name="ClipboardDetectLineEnd" type="hex" data="01"/>
 			<value name="ClipboardBashMargin" type="hex" data="00"/>
@@ -72,7 +72,7 @@
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
-			<value name="StartTasksName" type="string" data="{cmd::Cmder}"/>
+			<value name="StartTasksName" type="string" data="{bash::bash}"/>
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<value name="StoreTaskbarkTasks" type="hex" data="00"/>
@@ -85,7 +85,7 @@
 			<value name="Multi.NumberInCaption" type="hex" data="00"/>
 			<value name="Multi.CloseConfirm" type="hex" data="00"/>
 			<value name="Multi.CloseEditViewConfirm" type="hex" data="00"/>
-			<value name="Multi.NewConfirm" type="hex" data="01"/>
+			<value name="Multi.NewConfirm" type="hex" data="00"/>
 			<value name="Multi.UseArrows" type="hex" data="00"/>
 			<value name="Multi.UseNumbers" type="hex" data="01"/>
 			<value name="Multi.UseWinTab" type="hex" data="00"/>
@@ -326,7 +326,7 @@
 			<value name="PanView.UsePicView2" type="hex" data="01"/>
 			<value name="PanView.RestoreOnStartup" type="hex" data="00"/>
 			<value name="Update.VerLocation" type="string" data=""/>
-			<value name="Update.CheckOnStartup" type="hex" data="01"/>
+			<value name="Update.CheckOnStartup" type="hex" data="00"/>
 			<value name="Update.CheckHourly" type="hex" data="00"/>
 			<value name="Update.ConfirmDownload" type="hex" data="01"/>
 			<value name="Update.UseBuilds" type="hex" data="01"/>
@@ -670,7 +670,7 @@
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
-				<value name="MinimizeRestore" type="dword" data="000011c0"/>
+				<value name="MinimizeRestore" type="dword" data="00000000"/>
 				<value name="MinimizeRestore2" type="dword" data="00000000"/>
 				<value name="GlobalRestore" type="dword" data="00000000"/>
 				<value name="CdExplorerPath" type="dword" data="00000000"/>
@@ -707,7 +707,7 @@
 				<value name="Multi.Scroll" type="dword" data="00000000"/>
 				<value name="Multi.GroupInput" type="dword" data="00005d47"/>
 				<value name="Multi.Detach" type="dword" data="00000000"/>
-				<value name="Multi.Close" type="dword" data="00001157"/>
+				<value name="Multi.Close" type="dword" data="00000000"/>
 				<value name="CloseTabKey" type="dword" data="00000000"/>
 				<value name="CloseGroupKey" type="dword" data="00000000"/>
 				<value name="CloseGroupPrcKey" type="dword" data="00000000"/>
@@ -724,7 +724,7 @@
 				<value name="Multi.MoveRight" type="dword" data="00125b27"/>
 				<value name="CTS.VkBlockStart" type="dword" data="00000000"/>
 				<value name="CTS.VkTextStart" type="dword" data="00000000"/>
-				<value name="CTS.VkCopyFmt0" type="dword" data="00001143"/>
+				<value name="CTS.VkCopyFmt0" type="dword" data="00000000"/>
 				<value name="CTS.VkCopyFmt1" type="dword" data="00101143"/>
 				<value name="CTS.VkCopyFmt2" type="dword" data="00000000"/>
 				<value name="CTS.VkCopyAll" type="dword" data="00000000"/>
@@ -733,7 +733,7 @@
 				<value name="Multi.ShowTabsList" type="dword" data="00000000"/>
 				<value name="Multi.ShowTabsList2" type="dword" data="00000000"/>
 				<value name="ClipboardVkAllLines" type="dword" data="0000102d"/>
-				<value name="ClipboardVkFirstLine" type="dword" data="00001156"/>
+				<value name="ClipboardVkFirstLine" type="dword" data="00000000"/>
 				<value name="DeleteWordToLeft" type="dword" data="00001108"/>
 				<value name="FindTextKey" type="dword" data="00005d46"/>
 				<value name="ScreenshotKey" type="dword" data="00000000"/>
@@ -853,7 +853,10 @@
 			<value name="LastMonitor" type="string" data="0,0,1920,1020"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
 			<value name="DownShowExOnTopMessage" type="hex" data="00"/>
-			<value name="EnvironmentSet" type="multi"/>
+			<value name="EnvironmentSet" type="multi">
+				<line data="set LANG=en_US.UTF-8"/>
+				<line data="set LC_ALL=en_US.UTF-8"/>
+			</value>
 			<value name="Update.InetTool" type="hex" data="00"/>
 			<value name="Update.InetToolCmd" type="string" data=""/>
 			<value name="SuppressBells" type="hex" data="01"/>
